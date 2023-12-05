@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	background-color: #f5f4ff;
+	color: #3c3b43;
+}
+
+.logo{
+	height: 155px;
+	width: 267px;
+	position: relative;
+	right: 30px;
+	bottom: 35px;
+}
+
+@keyframes slideInFromLeft {
+	from {
+	  transform: translateX(-100%);
+	}
+	to {
+	  transform: translateX(0);
+	}
+  }
+
+.sidebar{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 2rem;
+	background-color: #3c3b43;
+	position: fixed;
+	left: 0;
+}
+
+.sidebar.active{
+	display: flex;
+	width: 220px;
+	z-index: 100;
+	opacity: 1;
+}
+
+.menu{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+	gap: 2rem;
+}
+
+.menu a{
+	display: flex;
+	align-items: center;
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.menu a:hover {
+	color: #aeaac5;
+	background-color: transparent;
+  }
+
+.menu ion-icon{
+	margin-right: 0.5rem;
+}
+
+.caret-back-outline{
+	color: white;
+	font-size: 25px;
+	position: absolute;
+	top: 44%;
+	right: 0;
+	transform: translateY(-50%);
+	display: none;
+	cursor: pointer;
+}
+
+.profile{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 1rem;
+	background-color: white;
+	color: black;
+	border: none;
+	border-radius: 10px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	cursor: pointer;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.profile:hover{
+	background-color: #aeaac5;
+}
+
+.profimg{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.profname h4{
+	font-weight: bold;
+}
+
+.profname p{
+	font-size: 14px;
+}
+
+.main{
+	width: calc(100% - 20% - 25%);
+	min-height: 100%;
+	min-width: 60px;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 2%;
+	margin-left: 20%;
+	z-index: 1;
+}
+
+.main-header{
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.hamburg{
+	background-color: white;
+	padding: 0.5rem;
+	border-radius: 20px;
+	display: none;
+}
+
+.search{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border: none;
+	background-color: white;
+	border-radius: 20px;
+	padding: 0.5rem 1rem;
+	position: relative;
+}
+
+.search input{
+	width: 90%;
+	border: none;
+	outline: none;
+}
+
+.searchbar{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	padding: 0 5%;
+	border: none;
+	background-color: #3c3b43;
+	color: white;
+	font-size: 20px;
+	border-radius: 20px;
+	box-shadow: rgb(0, 0, 0, 0.2) 0px 1px 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.searchbar:hover{
+	background-color: #615e75;
+	color: black;
+}
+
+.searchbar ion-icon{
+	margin-top: 2px;
+}
+
+
+.wrapper{
+	width: 150%;
+	display: flex;
+	color: black;
+	flex-direction: column;
+	padding: 1rem 0;
+	gap: 1rem;
+	overflow-y: auto;
+}
+
+.card{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 3%;
+	margin: 0 1%;
+	background-color: white;
+	line-height: 1.5;
+	gap: 1.5rem;
+	box-shadow: rgb(0, 0, 0, 0.2) 0px 1px 4px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.mainimg{
+	width: 80px;
+	height: 80px;
+	margin: 20px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+
+.card:hover{
+	box-shadow: rgb(0, 0, 0, 0.3) 0px 3px 6px;
+}
+
+.card-left{
+	width: 10%;
+	min-height: 50px;
+	display: flex;
+	justify-content: left;
+	border: 20%;
+}
+
+.card-center{
+	width: 50%;
+}
+
+.desc{
+	font-size: 13px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.misc{
+	font-size: 12px;
+	color: rgba(38, 41, 43, 0.6);
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.misc h4{
+	display: flex;
+	padding: 0 1rem 0 0;
+	align-items: center;
+}
+
+.detailed{
+	width: 25%;
+	min-width: 250px;
+	height: 100%;
+	padding: 1rem 2rem 2rem;
+	position: fixed;
+	right: 0;
+	background-color: white;
+	overflow: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	opacity: 1;
+	transition: all 0.3s;
+}
+
+.close-outline{
+	display: none;
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+  	left: 20px;
+    cursor: pointer;
+}
+
+.detail-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.detail-header hr{
+    transform: translateY(-50%);
+    background-color: gray; /* Set the background color */
+    border: none; /* Remove the default border */
+    margin: 1rem 0;
+}
+
+.divider{
+	width: 100%;
+	height: 1px;
+	background-color: gray;
+	border: none;
+	margin: 1rem;
+}
+
+.detail-btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 1rem;
+	gap: 1rem;
+  }
+
+  .apply {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #3c3b43;
+	font-size: 17px;
+	border: none;
+	width: 180px;
+	height: 40px;
+	border-radius: 60px;
+	transition: background-color 0.2s ease, color 0.2s ease;
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	}
+
+  .apply ion-icon {
+	font-size: 24px;
+	margin-right: 10px;
+	vertical-align: middle;
+  }
+
+  .apply:hover {
+	background-color: #615e75;
+	color: white;
+  }
+
+  .detailed.active{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 100;
+    opacity: 1;
+    position: fixed;
+  }
+
+
+  @media screen and (max-width:1200px){
+	.logo{
+		height: 70px;
+		width: 192px;
+		position: relative;
+		left: -18px;
+		bottom: -10px;
+	}
+  }
+
+  @media screen and (max-width:1020px){
+	.hamburg{
+		display: block;
+		font-size: 18px;
+		cursor: pointer;
+	}
+	.hamburg:hover{
+		background-color:#615e75;
+	}
+	.sidebar{
+		opacity: 0;
+		transition: all 0.3s;
+	}
+	.main{
+		width: calc(100% - 40%);
+		margin-left: 0;
+	}
+	.caret-back-outline{
+		display: block;
+	}
+  }
+
+  @media screen and (max-width:800px){
+	.mainimg{
+		width: 60px;
+		height: 60px;
+		margin: 20px;
+		margin-right: 10px;
+		margin-bottom: 5px;
+	}
+  }
+
+  @media screen and (max-width:630px){
+	.detailed{
+		opacity: 0;
+		transition: all 0.3s;
+	}
+	.main{
+		width: 100%;
+	}
+  }

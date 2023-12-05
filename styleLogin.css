@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(62deg, #f5f4ff 0%, #f2f0ff 100%);
+    color: white;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 430px;
+    width: 100%;
+    background: #3c3b43;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 3);
+    padding: 45px;
+}
+.container.registration{
+    display: none;
+}
+#check.checked ~ .registration{
+    display: block;
+}
+#check{
+    display: none;
+}
+.container.form{
+    padding: 2rem
+}.form.header{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.form input{
+    height: 60px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 17px;
+    margin-bottom: 1.3rem;
+    border: 1px solid #ddd;
+    border-radius: 17px;
+    outline: none;
+}
+.form input:focus{
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 2);
+}
+.form input.button{
+    color: #fff;
+    background: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.form input .button:hover{
+    background: rgb(239, 218, 240);
+}
+.signin{
+    font-size: 17px;
+    text-align: center;
+}
+.form a{
+    color: rgb(247, 223, 245);
+    cursor: pointer;
+}
+.submit {
+	align-items: center;
+	justify-content: center;
+	background-color: #817c9c;
+	font-size: 17px;
+	border: none;
+	width: 180px;
+	height: 40px;
+	border-radius: 60px;
+	transition: background-color 0.2s ease, color 0.2s ease;
+	cursor: pointer;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	}
+
+  .submit ion-icon {
+	font-size: 24px;
+	margin-right: 10px;
+	vertical-align: middle;
+  }
+
+  .submit:hover {
+	background-color: #615a8f;
+	color: #ffffff;
+  }
+
+  .detailed.active{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 100;
+    opacity: 1;
+    position: fixed;
+  }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Profile Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styleProfile.css">
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script> 
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="sidebar">
+    <a href=""><img src="img/logo.png" class="logo"></a>
+    <div class="menu">
+    <a href="/homepage.html"><ion-icon name="home-outline"></ion-icon>Home</a>
+    <a href="/lowongan.html"><ion-icon name="people-outline"></ion-icon>Lowongan</a>
+    <a href="/notif.html"><ion-icon name="chatbubble-ellipses-outline"></ion-icon>Notif</a>
+    <a href="/homepage.html"><ion-icon name="exit-outline"></ion-icon>Logout</a>
+    </div>
+    
+    <ion-icon name="caret-back-outline" class="caret-back-outline"></ion-icon>
+
+    <a href="/profile.html">
+    <div class="profile">
+        <img class="profimg" src="/img/blankimg.png">
+        <div class="profname">
+            <h4>My Name</h4>
+            <p>My School</p>
+        </div>
+    </div>
+    </a>
+</div>
+
+<div class="main">
+    <div class="main-header">
+        <ion-icon name="menu-outline" class="hamburg"></ion-icon>
+    </div>
+
+    <header>
+        <h1>Profile Settings</h1>
+    </header>
+
+    <div class="profile-container">
+            <label for="profile-image">Ganti Foto Profil:</label>
+            <img src="img/blankimg.png" alt="Profile Picture" class="profile-image">
+            <input type="file" id="profile-mage" name="profile-image" required>
+            <br>
+
+            <br>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="location">Tanggal Lahir:</label>
+            <input type="date" id="location" name="location">
+
+            <label for="degree">Asal Instansi:</label>
+            <input type="text" id="instansi" name="instansi">
+
+            <label for="place">Domisili:</label>
+            <input type="text" id="domisili" name="domisili">
+
+            <label for="telephone">No.Telepon:</label>
+            <input type="text" id="telepon" name="telepon">
+
+            <div class="detail-btn">
+                <a href="profile.html">
+                <button class="save"><ion-icon name="arrow-forward-circle"></ion-icon>Simpan</button>
+    </div>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

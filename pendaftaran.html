@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Pendaftaran Calon Peserta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styleDaftar.css">
+	<script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  	  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+<div class="sidebar">
+	<img src="img/logo.png" class="logo">
+	<div class="menu">
+	<a href="/homepage.html"><ion-icon name="home-outline"></ion-icon>Home</a>
+	<a href="/lowongan.html"><ion-icon name="people-outline"></ion-icon>Lowongan</a>
+	<a href="/notif.html"><ion-icon name="chatbubble-ellipses-outline"></ion-icon>Notif</a>
+	<a href="/homepage.html"><ion-icon name="exit-outline"></ion-icon>Logout</a>
+	</div>
+	
+	<ion-icon name="caret-back-outline" class="caret-back-outline"></ion-icon>
+
+	<a href="/profile.html">
+	<div class="profile">
+		<img class="profimg" src="/img/blankimg.png">
+		<div class="profname">
+			<h4>My Name</h4>
+			<p>My School</p>
+		</div>
+	</div>
+</a>
+</div>
+
+<div class="main">
+	<div class="main-header">
+		<ion-icon name="menu-outline" class="hamburg"></ion-icon>
+	</div>
+
+<div class="container">
+    <div class="header">
+      <h1>PENDAFTARAN CALON PESERTA MAGANG DPD RI</h1>
+      <p>Silahkan mengisi data diri dan berkas yang dibutuhkan</p>
+    </div>
+    <div class="content">
+      <p>Pastikan anda telah mengisi dengan benar formulir pendaftaran dibawah ini:</p>
+      <br>
+      <div class="form-row">
+        <label for="nama">1. Nama Lengkap <span>*</span></label>
+        <input class="full-input" type="text" placeholder="Nama lengkap anda" required>
+      </div>
+      <div class="form-row">
+        <label for="nama">2. Jenis Kelamin <span>*</span></label>
+        <br>
+        <input type="radio" name="gender" value="Laki-laki">Laki-laki
+        <br>
+        <input type="radio" name="gender" value="Perempuan">Perempuan
+      </div>
+      <div class="form-row">
+        <label for="nama">3. Email <span>*</span></label>
+        <input class="full-input" type="text" placeholder="Email anda" required>
+      </div>
+      <div class="form-row">
+        <label for="nama">4. Nomor Handphone <span>*</span></label>
+        <input class="full-input" type="text" placeholder="Nomor Handphone anda" required>
+      </div>
+      <div class="form-row">
+        <label for="nama">5. Lembaga Pendidikan<span>*</span></label>
+        <input class="full-input" type="text" placeholder="Lembaga Pendidikan Anda">
+      </div>
+      <div class="form-row">
+        <label for="nama">6. Jurusan <span>*</span></label>
+        <input class="full-input" type="text" placeholder="Jurusan Anda" required>
+      </div>
+      <div class="form-row">
+        <label for="nama">7. NIS/NIM <span>*</span></label>
+        <input class="full-input" type="text" placeholder="NIS/NIM Anda" required>
+      </div>
+      <div class="form-row">
+        <label for="nama">8. Alasan Magang (MOTIVATION LETTER) <span>*</span></label>
+        <input class="full-input" type="file" placeholder="Enter your answer" required>
+      </div>
+      <div class="form-row">
+        <label for="nama">9. PROPOSAL PENGAJUAN MAGANG <span>*</span></label>
+        <p>Bagi Mahasiswa diwajibkan melampirkan proposal pengajuan magang yang dapat dilihat di sini: 
+        bit.ly/proposalmagangDPD</p>
+        <input class="full-input" type="file" placeholder="Enter your answer" required>
+      </div>
+      <div class="form-row">
+        <label for="nama">10. KARTU TANDA PENGENAL <span>*</span></label>
+        <input class="full-input" type="file" placeholder="Enter your answer" required>
+      </div>
+      <div class="form-row">
+        <label for="nama">11. FOTO UK. 3X4 <span>*</span></label>
+        <input class="full-input" type="file" placeholder="Enter your answer" required>
+      </div>
+      <div class="form-row">
+        <label for="nama">12. SURAT PENGANTAR DARI LEMBAGA PENDIDIKAN <span>*</span></label>
+        <input class="full-input" type="file" placeholder="Enter your answer" required>
+      </div>
+      <div class="form-row">
+        <label for="nama">13. CURRICULUM VITAE </label>
+        <input class="full-input" type="file" placeholder="Enter your answer" required>
+      </div>
+      <div class="form-row">
+        <label for="nama">14. SURAT KETERANGAN MAHASISWA AKTIF </label>
+        <input class="full-input" type="file" placeholder="Enter your answer" required>
+      </div>
+      <div class="form-row">
+        <label for="nama">15. TRANSKRIP NILAI SEMESTER TERAKHIR</label>
+        <input class="full-input" type="file" placeholder="Enter your answer" required>
+      </div>
+
+            <div class="button">
+                <label for="text">Anda sudah yakin?</label>
+                <button class="apply"><ion-icon name="arrow-forward-circle"></ion-icon>Submit</button>
+            </div> 
+        </div>
+    </div> 
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

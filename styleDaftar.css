@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 103%;
+}
+body{
+    min-height: 135vh;
+    width: 100%;
+    background-color: #f5f4ff;
+	color: #3c3b43;
+	position: absolute;
+}
+	
+.logo{
+	height: 155px;
+	width: 267px;
+	position: relative;
+	right: 30px;
+	bottom: 35px;
+}
+.sidebar{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 2rem;
+	background-color: #3c3b43;
+	position: fixed;
+	left: 0;
+}
+.sidebar.active{
+	display: flex;
+	width: 220px;
+	z-index: 100;
+	opacity: 1;
+}
+
+.menu{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+	gap: 2rem;
+}
+
+.menu a{
+	display: flex;
+	align-items: center;
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.menu a:hover {
+	color: #aeaac5;
+	background-color: transparent;
+  }
+
+.menu ion-icon{
+	margin-right: 0.5rem;
+}
+
+.caret-back-outline{
+	color: white;
+	font-size: 25px;
+	position: absolute;
+	top: 44%;
+	right: 0;
+	transform: translateY(-50%);
+	display: none;
+	cursor: pointer;
+}
+
+.profile{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 1rem;
+	background-color: white;
+	color: black;
+	border: none;
+	border-radius: 10px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	cursor: pointer;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.profile:hover{
+	background-color: #aeaac5;
+}
+
+.profimg{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.profname h4{
+	font-weight: bold;
+}
+
+.profname p{
+	font-size: 14px;
+}
+
+.main{
+	width: calc(100% - 20% - 25%);
+	min-height: 100%;
+	min-width: 60px;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 2%;
+	margin-left: 20%;
+	z-index: 1;
+}
+
+.main-header{
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.hamburg{
+	background-color: white;
+	padding: 0.5rem;
+	border-radius: 20px;
+	display: none;
+}
+
+.container{
+    width: 800px;
+    margin: auto;
+    padding: 0 14px;
+    box-sizing: border-box;
+}
+
+.header{
+	height: 130%;
+    width: 130%;
+    background-color: #3c3b43;
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+	font-size: 20px;
+}
+
+.content{
+	height: 130%;
+    width: 130%;
+    background-color: white;
+    padding: 30px;
+    line-height: 24px;
+	font-size: 18px;
+}
+
+.content span{
+    color: red;
+    font-weight: bold;
+}
+
+.label{
+    display: block;
+    padding: 10px 0;
+}
+
+.form-row{
+    padding-right: 40px;
+    margin-bottom: 50px;
+}
+.full-input{
+    width: 100%;
+    margin-left: 18px;
+    padding: 12px;
+}
+.input [type=radio]{
+    margin-left: 18px;
+    margin-right: 8px;
+    margin-bottom: 14px;
+}
+
+.short-input{
+    width: 100px;
+    margin: 0 18px 0 0;
+    padding: 12px;
+}
+
+.form-submit{
+    margin-top: 100px;
+}
+
+.apply{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #3c3b43;
+	font-size: 17px;
+	border: none;
+	width: 180px;
+	height: 40px;
+	border-radius: 60px;
+	transition: background-color 0.2s ease, color 0.2s ease;
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.apply ion-icon{
+	font-size: 24px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.apply:hover{
+	background-color: #5f5c70;
+	color: white;
+}
+
+.detailed.active{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 100;
+    opacity: 1;
+    position: fixed;
+}
+
+.div {
+    margin-top: -15px;
+}
+
+
+.header{
+	height: 130%;
+    width: 130%;
+	bottom: 0px;
+    background-color: #3c3b43;
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+	font-size: 20px;
+}
+
+@media screen and (max-width:1020px){
+.hamburg{
+		display: block;
+		font-size: 18px;
+		cursor: pointer;
+}
+.hamburg:hover{
+		background-color:#ba97c9;
+}
+.sidebar{
+		opacity: 0;
+		transition: all 0.3s;
+}
+.main{
+		width: calc(100% - 40%);
+		margin-left: 0;
+}
+.caret-back-outline{
+		display: block;
+	}
+}
+@media(max-width: 768px){
+    .container {
+      width: 100%;
+    }
+}

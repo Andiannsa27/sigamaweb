@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>My Notification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styleNotif.css">
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script> 
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="sidebar">
+    <a href=""><img src="img/logo.png" class="logo"></a>
+    <div class="menu">
+    <a href="/homepage.html"><ion-icon name="home-outline"></ion-icon>Home</a>
+    <a href="/lowongan.html"><ion-icon name="people-outline"></ion-icon>Lowongan</a>
+    <a href="/notif.html"><ion-icon name="chatbubble-ellipses-outline"></ion-icon>Notif</a>
+    <a href="/homepage.html"><ion-icon name="exit-outline"></ion-icon>Logout</a>
+    </div>
+    
+    <ion-icon name="caret-back-outline" class="caret-back-outline"></ion-icon>
+
+    <a href="/profile.html">
+    <div class="profile">
+        <img class="profimg" src="/img/blankimg.png">
+        <div class="profname">
+            <h4>My Name</h4>
+            <p>My School</p>
+        </div>
+    </div>
+    </a>
+</div>
+
+<div class="main">
+    <div class="main-header">
+        <ion-icon name="menu-outline" class="hamburg"></ion-icon>
+    </div>
+  
+    <div class="notification">
+      <h2>Notifications</h2>
+      <ul>
+          <li>
+              <div class="notification-item">
+                  <p>Your Applied Status : </p>
+                  <span class="notification-time">2 hours ago</span>
+              </div>
+          </li>
+          <li>
+              <div class="notification-item">
+                  <p>Your Applied Status : </p>
+                  <span class="notification-time">1 day ago</span>
+              </div>
+          </li>
+          <!-- Add more notification items as needed -->
+      </ul>
+  </div>
+</div>
+    
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

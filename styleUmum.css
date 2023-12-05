@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+	height: 80px;
+	width: 220px;
+	position: relative;
+	left: -18px;
+	bottom: -10px;
+}
+
+@keyframes slideInFromLeft {
+	from {
+	  transform: translateX(-100%);
+	}
+	to {
+	  transform: translateX(0);
+	}
+  }
+
+.sidebar{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 2rem;
+	background-color: #473144;
+	position: fixed;
+	left: 0;
+}
+
+.sidebar.active{
+	display: flex;
+	width: 220px;
+	z-index: 100;
+	opacity: 1;
+}
+
+.menu{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+	gap: 2rem;
+}
+
+.menu a{
+	display: flex;
+	align-items: center;
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.menu a:hover {
+	color: #ce9fe0;
+	background-color: transparent;
+  }
+
+.menu ion-icon{
+	margin-right: 0.5rem;
+}
+
+.caret-back-outline{
+	color: white;
+	font-size: 25px;
+	position: absolute;
+	top: 44%;
+	right: 0;
+	transform: translateY(-50%);
+	display: none;
+	cursor: pointer;
+}
+
+.profile{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 1rem;
+	background-color: white;
+	color: black;
+	border: none;
+	border-radius: 10px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	cursor: pointer;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.profile:hover{
+	background-color: #bd6993;
+}
+
+.profimg{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.profname h4{
+	font-weight: bold;
+}
+
+.profname p{
+	font-size: 14px;
+}
+
+.main{
+	width: calc(100% - 20% - 25%);
+	min-height: 100%;
+	min-width: 60px;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 2%;
+	margin-left: 20%;
+	z-index: 1;
+}
+
+.main-header{
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.hamburg{
+	background-color: white;
+	padding: 0.5rem;
+	border-radius: 20px;
+	display: none;
+}
+
+.search{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border: none;
+	background-color: white;
+	border-radius: 20px;
+	padding: 0.5rem 1rem;
+	position: relative;
+}
+
+.search input{
+	width: 90%;
+	border: none;
+	outline: none;
+}
+
+.searchbar{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	padding: 0 5%;
+	border: none;
+	background-color: #473144;
+	color: white;
+	font-size: 20px;
+	border-radius: 20px;
+	box-shadow: rgb(0, 0, 0, 0.2) 0px 1px 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.searchbar:hover{
+	background-color: #883c62;
+	color: black;
+}
+
+.searchbar ion-icon{
+	margin-top: 2px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+
+/* Style the main content section */
+.main-content {
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Style the search bar */
+.search-bar {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the job listings */
+.lowongan {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lowongan-card {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    width: calc(33.33% - 20px); /* Set to 33.33% for three columns with some margin */
+}
+
+.lowongan-card img {
+    max-width: 80%;
+    height: 80;
+    top: 50px;
+}
+
+.lowongan-card h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.lowongan-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.lowongan-card a {
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+}
